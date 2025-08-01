@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site Leomb</title>
 </head>
 <style>
     * {
@@ -12,7 +12,7 @@
 
     body {
         margin: 0px;
-        padding: 15px;
+        padding: 20px;
         background-color: beige;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
@@ -27,14 +27,38 @@
 
     main {
         margin-top: 20px;
-        padding: 20px;
+        padding-top: 20px;
         display: flex;
-        border: 2px solid rgb(51, 49, 49);
-        border-radius: 10px;
+        gap: 20px;
     }
 
     section {
+        transition: 2.s;
         flex: 1;
+        border: 2px solid rgb(51, 49, 49);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    section:hover {
+        transform: scale(1.01);
+        background-color: rgb(51, 49, 49);
+        color: beige;
+        box-shadow: 0 4px 2px -2px gray;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: rgb(51, 49, 49);
+        color: beige;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
     }
 </style>
 <body>
@@ -53,17 +77,47 @@
             </ul>
         </section>
         <section id="section-2">
-            <iframe src="https://archive.org/embed/amiga-computing-magazine-044" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            <h2>Cursos</h2>
+            <ul>
+                <li>Lógica de Programação</li>
+                <li>Redes com IOT</li>
+                <li>Curso Expecialista Excel</li>
+                <li>Levantamento de Requisitos</li>
+            </ul>
+        </section>
+        <section id="section-3">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Usar meu computador</li>
+                <li>Assistir Filmes</li>
+                <li>Conversar com os amigos</li>
+                <li>Comer comida da minha mãe</li>
+            </ul>
         </section>
     </main>
-    <audio id="bg-audio" src="audio.MP3" loop></audio>
-
-    <script>
-    // Wait for user interaction
-    window.addEventListener('click', function () {
-        const audio = document.getElementById('bg-audio');
-        audio.play();
-    }, { once: true }); // Run only once
-    </script>
+    <main>
+        <section id="section-4">
+            <h2>Contatos</h2>
+            <ul>
+                <li><a href="leombernardoni@gmail.com" target="_blank">Email: leombernardoni@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/leonardo-modesto-76370b349/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/LeomMb-coder" target="_blank">Github</a></li>
+            </ul>
+        </section>
+        <div style="background-color: rgb(51, 49, 49);border-radius: 15px;">
+            <img src="https://media.tenor.com/ErDIqOfxjpAAAAAj/peace-sign-mario.gif" alt="mario">
+        </div>
+        <section id="section-4">
+            <h2>Melhores Jogos</h2>
+            <ul>
+                <li>Red Dead Redemption 2</li>
+                <li>Satisfactory</li>
+                <li>Terraria</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Leomb. Todos os direitos reservados.
+    </footer>
 </body>
 </html>

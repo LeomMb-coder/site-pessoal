@@ -56,5 +56,14 @@
             <iframe src="https://archive.org/embed/amiga-computing-magazine-044" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
         </section>
     </main>
+    <audio id="bg-audio" src="audio.MP3" loop></audio>
+
+    <script>
+    // Wait for user interaction
+    window.addEventListener('click', function () {
+        const audio = document.getElementById('bg-audio');
+        audio.play();
+    }, { once: true }); // Run only once
+    </script>
 </body>
 </html>

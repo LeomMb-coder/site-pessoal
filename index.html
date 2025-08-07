@@ -45,11 +45,11 @@
         background-color: rgb(51, 49, 49);
         color: beige;
         box-shadow: 0 4px 2px -2px gray;
-        cursor: pointer;
     }
 
     a {
         text-decoration: none;
+        color: inherit;
     }
 
     footer {
@@ -60,13 +60,37 @@
         text-align: center;
         border-radius: 10px;
     }
+
+    .buttons {
+        text-align: right;
+    }
+    
+    .buttons-visualizacao {
+        font-size: 20px;
+        color: black;
+        margin-left: 10px;
+    }
+
+    .modo-grade {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .modo-grade section {
+        width: 40%;
+    }
 </style>
 <body>
     <header>
         <h1>Bem vindo à minha página!</h1>
         <p>Estudante de programação</p>
     </header>
-    <main>
+        <main id="principal">
         <section id="section-1">
             <h2>Minhas Habilidades</h2>
             <ul>
@@ -95,7 +119,7 @@
             </ul>
         </section>
     </main>
-    <main>
+    <main id="principal">
         <section id="section-4">
             <h2>Contatos</h2>
             <ul>
@@ -107,12 +131,42 @@
         <div style="background-color: rgb(51, 49, 49);border-radius: 15px;">
             <img src="https://media.tenor.com/ErDIqOfxjpAAAAAj/peace-sign-mario.gif" alt="mario">
         </div>
-        <section id="section-4">
+        <section id="section-5">
             <h2>Melhores Jogos</h2>
             <ul>
                 <li>Red Dead Redemption 2</li>
                 <li>Satisfactory</li>
                 <li>Terraria</li>
+                <li>Half-Life</li>
+                <li>CS:GO 2</li>
+            </ul>
+        </section>
+    </main>
+    <main id="principal">
+        <section id="section-6">
+            <h2>Meus Cursos</h2>
+            <ul>
+                <li><a href="https://mimo.org/" target="_blank">Curso Mimo Programação</a></li>
+                <li><a href="https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico" target="_blank">Curso Bradesco</a></li>
+                <li><a href="https://king.host/blog/tecnologia/cursos-de-programacao-gratuitos/" target="_blank">Curso KingHost</a></li>
+            </ul>
+        </section>
+        <section id="section-7">
+            <h2>Mais Hobbies</h2>
+            <ul>
+                <li><a href="https://www.reddit.com/r/Games/">Jogar Videogame</a></li>
+                <li><a href="https://www.reddit.com/r/photography/">Fotografia</a></li>
+                <li><a href="https://www.reddit.com/r/drawing/">Desenhar</a></li>
+                <li><a href="https://www.reddit.com/r/comics/">Comics</a></li>
+            </ul>
+        </section>
+        <section id="section-8">
+            <h2>Melhores Sites</h2>
+            <ul>
+                <li><a href="https://archive.org/">Internet Archive</a></li>
+                <li><a href="https://www.youtube.com/watch?v=eKzl87EDb2g&list=PLPQE9utdmjdvjnR_C0ZDBS4dEcK6bpYik">Youtube</a></li>
+                <li><a href="https://barrikada-98.neocities.org/">Barrikada.98</a></li>
+                <li><a href="https://chatgpt.com/">ChatGpt</a></li>
             </ul>
         </section>
     </main>
@@ -120,4 +174,14 @@
         &copy; 2025 Leomb. Todos os direitos reservados.
     </footer>
 </body>
+<script>
+    function mudarGrade() {
+        const principal = document.getElementById('principal')
+        principal.classList.toggle('modo-grade')
+    }
+    function mudarLista() {
+        const principal = document.getElementById('principal')
+        principal.classList.remove('modo-lista')
+    }
+</script>
 </html>
